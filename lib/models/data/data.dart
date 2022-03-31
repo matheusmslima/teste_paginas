@@ -5,12 +5,14 @@ class Data {
   String bateria;
   String sensor1;
   String sensor2;
+  String sensor3;
   
   Data({
     required this.deviceName,
     required this.bateria,
     required this.sensor1,
     required this.sensor2,
+    required this.sensor3,
   });
 
   Map<String, dynamic> toMap() {
@@ -19,6 +21,7 @@ class Data {
       'bateria': bateria,
       'sensor1': sensor1,
       'sensor2': sensor2,
+      'sensor3': sensor3,
     };
   }
 
@@ -28,6 +31,7 @@ class Data {
       bateria: map['bateria'] ?? '',
       sensor1: map['sensor1'] ?? '',
       sensor2: map['sensor2'] ?? '',
+      sensor3: map['sensor3'] ?? '',
     );
   }
 
@@ -37,6 +41,6 @@ class Data {
 
   @override
   String toString() {
-    return 'Data(deviceName: $deviceName, bateria: $bateria, sensor1: $sensor1, sensor2: $sensor2)';
+    return 'Data(deviceName: $deviceName, bateria: $bateria, sensor1: $sensor1, sensor2: $sensor2, sensor3: $sensor3)';
   }
 }
